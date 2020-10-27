@@ -39,9 +39,11 @@ $(function () {
 		var menu = $(".header__menu");
 		if(menu.is(":hidden")){
 			$(this).addClass("header__menu-btn_active");
+			$(".switcher").fadeOut();
 			menu.fadeIn();
 		} else {
 			$(this).removeClass("header__menu-btn_active");
+			$(".switcher").fadeIn();
 			menu.fadeOut();
 		}
 	});
